@@ -13,6 +13,7 @@ public class kasir {
     static InputStreamReader inputStreamReader = new InputStreamReader(System.in);
     static BufferedReader input = new BufferedReader(inputStreamReader);
 
+
     static void welcom() {
         System.out.println("Selamat Datang di Sistem Kasir");
     }
@@ -22,20 +23,13 @@ public class kasir {
     }
 
     static void showbrg() throws IOException {
-
-    }
-
-    public static void main(String[] args) throws IOException {
         minyakgoreng mgr = new minyakgoreng();
         System.out.println(" ");
-        welcom();
-        System.out.println(welcom1());
-        System.out.println(" ");
-        System.out.println("========= MENU ========");
-        System.out.println("[1] Show All Buah");
-        System.out.println("[2] Insert Buah");
-        System.out.println("[3] Edit Buah");
-        System.out.println("[5] Exit");
+        System.out.println("========= List Barang ========");
+        System.out.println("[1] Minyak Goreng");
+        System.out.println("[2] ?");
+        System.out.println("[3] ?");
+        System.out.println("[4] ?");
         System.out.print("PILIH MENU> ");
 
         int selectedMenu = Integer.valueOf(input.readLine());
@@ -49,9 +43,15 @@ public class kasir {
                 break;
             default:
                 System.out.println("Pilihan salah!");
-
+            break;
 
         }
     }
-}
+    public static void main(String[] args) throws IOException {
+        System.out.println(" ");
+        welcom();
+        System.out.println(welcom1());
+        showbrg();
+    }
 
+}
