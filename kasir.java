@@ -4,7 +4,7 @@ package buj;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import java.util.Scanner;
 
 
 public class kasir {
@@ -24,6 +24,7 @@ public class kasir {
 
     static void showbrg() throws IOException {
         minyakgoreng mgr = new minyakgoreng();
+        Scanner sc = new Scanner(System.in);
         System.out.println(" ");
         System.out.println("========= List Barang ========");
         System.out.println("[1] Minyak Goreng");
@@ -36,7 +37,13 @@ public class kasir {
 
         switch (selectedMenu) {
             case 1:
-                mgr.minyak();
+                mgr.minyak("Minyak Goreng", 24);
+                System.out.print("Berapa banyak barang yang adan inginkan: ");
+                int pilihan = sc.nextInt();
+                int pajak = mgr.goreng(3);
+                int total = pilihan * pajak;
+                System.out.println("Totalnya: Rp"+ total + "000");
+
                 break;
             case 4:
                 System.exit(0);
