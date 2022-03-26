@@ -1,13 +1,11 @@
-package buj;
-
 public class minyakgoreng {
-    static void minyak(){
-        System.out.println(" Anda Memilih Minyak Goreng : Rp 24.000 ");
-        return;
+    static void minyak(String barang, int harga) {
+        System.out.println("Kamu memilih Barang " + barang + " dengan harga : Rp" + harga + "000");
     }
-    static int goreng(int a){
-        int hasil = a *24 +3;
-        return hasil;
 
+    static int goreng(int a){
+        int hasil =  a+24;
+        return hasil;
     }
 }
+
