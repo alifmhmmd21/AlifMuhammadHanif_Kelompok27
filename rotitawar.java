@@ -1,10 +1,10 @@
 public class rotitawar {
-  static void roti(){
-    System.out.println(" Anda memilih Roti Tawar : Rp 15.000 ");
-    return;
-  }
-  static int tawar(int a){
-    int hasil = a *15 +3;
-    return hasil;
-  }
+    static void roti(String barang, int harga){
+        System.out.println("Kamu memilih Barang " + barang + " dengan harga : Rp" + harga + "000");
+    }
+    
+    static int tawar(int a){
+        int hasil = a+24;
+        return hasil;
+    }
 }
